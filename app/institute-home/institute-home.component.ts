@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IInstitute } from '../iinstitute';
-import { IInstituteStatus } from '../iinstitute-status';
 import { InstituteService } from '../Services/institute.service';
 
 @Component({
@@ -9,8 +8,13 @@ import { InstituteService } from '../Services/institute.service';
   templateUrl: './institute-home.component.html',
   styleUrls: ['./institute-home.component.css']
 })
-export class InstituteHomeComponent implements OnInit {
 
+///<summary>
+//This component is for the institute home page . Important information about the institute and 
+//all the scholarship applications for that institute.
+
+
+export class InstituteHomeComponent implements OnInit {
   institutedata: IInstitute ={
     instituteId:0,
     instituteCategory:"",
@@ -30,12 +34,6 @@ export class InstituteHomeComponent implements OnInit {
     pincode:0,
     principalName:"",
     principalNumber:"",
-  }
-  statusdata:IInstituteStatus={
-    instituteApprovalId:0,
-    instituteId:0,
-    approvedByNodalOfficer:0,
-    approvedByMinistry:0,
   }
 
   instituteid: number = 0
@@ -59,9 +57,6 @@ export class InstituteHomeComponent implements OnInit {
     })
     
     console.log(this.institutedata)
-    this.instituteservice.getInstituteApproval(this.instituteid).subscribe((data:any)=>{
-      console.log(data)
-      this.statusdata=data} )
   }
 
 }

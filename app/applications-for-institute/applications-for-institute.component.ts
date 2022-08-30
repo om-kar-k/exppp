@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Iapplicationforinstitute } from '../iapplicationforinstitute';
-import { ScholarshipApplicationService } from '../Services/scholarship-application.service';
-
+import { Iapplicatioforinstitute } from '../iapplicatioforinstitute';
+import { ScholarshipapplicationService } from '../Services/scholarshipapplication.service';
 @Component({
   selector: 'app-applications-for-institute',
   templateUrl: './applications-for-institute.component.html',
@@ -10,7 +9,8 @@ import { ScholarshipApplicationService } from '../Services/scholarship-applicati
 })
 export class ApplicationsForInstituteComponent implements OnInit {
 
-   ///<summary>
+
+  ///<summary>
   //
   // This component helps us to fetch and show all the scholarship applications for a specific institute.
   // we can get the id of the institute from url using activated route and call the service to fetch all 
@@ -18,9 +18,9 @@ export class ApplicationsForInstituteComponent implements OnInit {
   ///<summary>
 
 
-  application: Iapplicationforinstitute[] = []
+  application: Iapplicatioforinstitute[] = []
   instituteid: number = 0
-  constructor(private scholarshipservice: ScholarshipApplicationService, private activatedroute: ActivatedRoute) { }
+  constructor(private scholarshipservice: ScholarshipapplicationService, private activatedroute: ActivatedRoute) { }
 
   ngOnInit(): void {
     const tid = this.activatedroute.snapshot.paramMap.get('id')                                
@@ -36,6 +36,5 @@ export class ApplicationsForInstituteComponent implements OnInit {
     )
     console.log(this.application)
   }
-
 
 }
