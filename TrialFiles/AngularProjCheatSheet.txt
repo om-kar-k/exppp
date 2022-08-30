@@ -1,0 +1,43 @@
+
+npm i -save bootstrap
+npm i -save jquery
+
+angular.json
+add to line 26"node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+
+add to line 28 in scripts array
+"node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+
+
+
+Extra Modules
+add Modules 1 AppRoutingModule, 
+HttpClientModule, FormModule in app.Module.ts
+
+import {HttpClientModule} from "@angular/common/http";
+
+
+
+Making a sevice:
+ng g s CatService
+
+
+
+
+
+For WebApi to giveth me data:
+services.AddCors(setup =>{setup.AddPolicy("default", options =>{options.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod();});});
+add this code in startup configureServies()^^
+
+
+
+next, below
+add in Middleware
+// Cross Origin Resource Sharing Policy            
+app.UseCors("default");
+
+
+
