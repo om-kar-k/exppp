@@ -1,0 +1,208 @@
+<body>
+  <br />
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <img src="https://scholarships.gov.in/public/Content/img/nic_left.png" alt="Scholarship" class="img-fluid mx-auto d-block float-xl-left float-lg-left float-md-left logoleft">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h1 class="text-center">National Scholarship Portal</h1>
+        <h3 class="text-center">Ministry of Electronics &amp; Information Technology, Government of India</h3>
+        <h6 class="text-center">(For Academic Year 2022-23)</h6>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <img src="https://scholarships.gov.in/public/Content/img/digital-india.png" alt="" class="img-fluid mx-auto d-block float-xl-right float-lg-right float-md-right logoright">
+    </div>
+</div>
+
+  <br />
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary lead brdr">
+    <a class="navbar-brand" routerLink="Home">
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/553/553416.png"
+        width="35"
+        height="35"
+        alt=""
+      />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-white"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            LOGIN
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item lead" routerLink="NodalLogin"
+              >Nodal Officer Login</a
+            >
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item lead" routerLink="MinistryLogin"
+              >Ministry Login</a
+            >
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="AboutUs">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="ContactUs">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary lead brdr">
+    
+    <a class="navbar-brand" routerLink="Home">
+      
+      <span class="navbar-text text-white">
+        <h1>National Scholarship Portal</h1>
+        
+      </span>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      ]
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="Home">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-white"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Officer's Login
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item lead" routerLink="NodalLogin"
+              >Nodal Officer Login</a
+            >
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item lead" routerLink="MinistryLogin"
+              >Ministry Login</a
+            >
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-white"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+           New Registration
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <a routerLink="/StudentRegister" class="dropdown-item lead">STUDENT REGISTRATION</a>
+            <div class="dropdown-divider"></div>
+
+            <a routerLink="/InstituteRegistration" class="dropdown-item lead">INSTITUTE REGISTRATION</a>
+          </div>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="AboutUs">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="ContactUs">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+   
+  
+  <marquee class="marq">
+                
+    Welcome to your National Scholarship Portal. Project under LTI-Larsen and Toubro Infotech. Meet our Team Members-Raghu Vamsi, Samiksha Naik, Swapnil Nalawade, Sheetal Shree.
+  
+  </marquee>
+  
+
+  <div class="row left-bar brdr  ">
+    <div class="card col-lg-3 col-sm-12 brdr col-left" >
+      <div class="card-header">
+        SCHOLARSHIPS
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><a routerLink="home" >Post Matric Scholarship</a></li>
+        <li class="list-group-item"><a routerLink="/AboutUs" >Pragati Scholarship</a></li>
+        <li class="list-group-item">Merit Based Scholarship</li>
+      </ul>
+    </div>
+    <div class="col-lg-9 col-sm-12 ">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <!-- <marquee style="border: 1px solid red;font-weight: bold;color: red;padding: 2px 5px;">
+                
+    Welcome to your National Scholarship Portal. Project under LTI-Larsen and Toubro Infotech. Meet our Team Members-Raghu Sangala, Samiksha Naik, Swapnil Nalawade, Sheetal Shree.
+  
+  </marquee> -->
+
+  <section class="footerfirst">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 offset-xl-3 offset-lg-2 pb-1 pt-1" >
+                <!-- <p class="text-center disclaimer" style="background-color: #acedf7;" >
+                    Get all the Scholarship information at one place, just a touch away!
+                </p> -->
+                <p class="text-center disclaimer">
+                    <strong>
+                      -----You may also visit-----
+                    </strong>
+                </p>
+            </div>
+            <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 offset-xl-2 offset-lg-1 pb-2" >
+                <div class="row">
+           
+                    <div class="col-xl col-lg col-md-3 col-sm-4">
+                       <a href="https://mygov.in/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Mygov.svg/1200px-Mygov.svg.png" class="img-fluid mx-auto d-flex mb-3"
+                            style="height: 50px;" />
+                       </a>
+                    </div>
+                                          
+                    <div class="col-xl col-lg col-md-3 col-sm-4">
+                        <a href="https://www.nic.in/" target="_blank"><img src="https://uxdt.nic.in/wp-content/uploads/2020/06/NIC-LOGO-IDENTITY-VARIANTS_sans-01.png?x86831" class="img-fluid mx-auto d-flex mb-3"
+                            style="height: 50px;" />
+                        </a>
+                    </div>
+                    <div class="col-xl col-lg col-md-3 col-sm-4 text-center">
+                        <a href="https://www.india.gov.in/" target="_blank"><img src="https://www.india.gov.in/sites/upload_files/npi/files/logo_1.png" class="img-fluid mx-auto d-flex mb-3"
+                            style="height: 50px;" />
+                        </a>
+                    </div>  
+                    <div class="col-xl col-lg col-md-3 col-sm-4" >
+                        <a href="https://www.digitalindia.gov.in/" target="_blank"><img src="https://digitalindia.gov.in/writereaddata/files/Headerlogo_0.png" class="img-fluid mx-auto d-flex mb-3"
+                            style="height: 50px;" />
+                        </a>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                      <p style="color:white"><strong>Copyright © 2022 Natinal Scholarship</strong></p>
+                      <p>Created by <a href="https://www.linkedin.com/in/raghu-vamsi-s-01081420b/" target="_blank">Raghu Vamsi</a> | <a href="https://www.linkedin.com/in/samiksha-naik-9a5b531a9" target="_blank">Samiksha Naik</a> | <a href="https://www.linkedin.com/in/swapnil-nalawade-679304196" target="_blank">Swapnil Nalawade</a> | <a href="https://www.linkedin.com/in/sheetal-shree-439515228/" target="_blank">Sheetal Shree</a></p>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+</body>

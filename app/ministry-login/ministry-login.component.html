@@ -1,0 +1,52 @@
+<p>ministry-login works!</p>
+<br />
+<br />
+<div class="card login" style="margin: auto 200px">
+  <br />
+  <h1 class="display-4 text-center">Ministry Login</h1>
+  <br />
+  <br />
+  <div class="row justify-content-center align-items-center">
+    <form [formGroup]="nodalloginForm" (ngSubmit)="onFormSubmit()">
+      <div class="form-group row">
+        <p>
+          Ministry ID:
+          <input formControlName="ID" class="form-control" />
+          <br />
+          <label
+            *ngIf="
+              nodalloginForm.get('ID')?.invalid &&
+              nodalloginForm.get('ID')?.dirty
+            "
+            class="error"
+          >
+            Ministry ID is required.
+          </label>
+        </p>
+      </div>
+      <div class="form-group row">
+        <p>
+          Password :
+          <input
+            type="password"
+            formControlName="Password"
+            class="form-control"
+          />
+        </p>
+      </div>
+      <br />
+      <br />
+      <div class="form-group row text-center">
+        <button
+          routerLink="/Ministry"
+          [disabled]="nodalloginForm.invalid"
+          class="btn btn-primary"
+        >
+          SUBMIT
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div *ngIf="formSubmitted" class="submitted">Form submitted successfully.</div>
